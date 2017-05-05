@@ -1,7 +1,10 @@
 body{
     background-color: #00091a;
     color: #99cc00;
+    font-weight: bold;
+    font-size: large;
     font-family: 'Give You Glory', cursive;
+    text-align: center;
 }
 h1,h3{
     text-align: center;
@@ -13,25 +16,9 @@ h1,h3{
     left: 3%;
     height: 47;
     width: 20%;
-    font-weight: bold;
-    font-size: medium;
-}
-#cate{
-    font-size:large;
-}
-#hint{
-    /*position: fixed;
-    top: 36%;
-    left: 5%;
-    width: 50%;*/
 }
 
 #hinttext{
-    /*position: fixed;
-    top: 39%;
-    left: 3%;
-    width: 15%;
-    height: 15%;*/
     word-wrap: break-word;
 }
 
@@ -50,23 +37,20 @@ h1,h3{
     height: 15%;
     text-align: center;
     font-size: xx-large;
-    font-weight: bold;
     letter-spacing: 3px;
 }
 .alphaButton{
-     position: fixed;
-    top: 19%;
+    position: fixed;
+    top: 26%;
     left: 76%;
     width: 23%;
-    text-align: center;
     border-width: 3px;
     border-style: ridge;
-
 }
 .alphabets{
     margin: 3px;
     width: 25px;
-    font-size: larger;
+    font-size: medium;
     font-weight: bold;
     border-radius: 9px;
     background-color: #00091a;
@@ -75,7 +59,6 @@ h1,h3{
 .alphabets:enabled{
     background-color: #99cc00;
     color: #00091a;
-    
 }
 
 #reset{
@@ -85,5 +68,41 @@ h1,h3{
     width: 15%;
     height: 7%;
     font-size: larger;
-    font-weight: bold;
+    
+}
+
+
+@media only screen  and (max-device-height : 736px)  
+{
+    h1,h3{
+    font-size: large;
+    
+    }
+
+    #hangimage{
+    position: fixed;
+    top: 10%;   
+    left: 27%;
+    width: 43%;
+    height: 53%;
+    }
+    #currentWord{
+        position: fixed;
+        top: 60%;
+        left: 25%;
+      
+    }
+    #reset{
+    position: fixed;
+        top: 80%;
+    }
+   .alphaButton{
+    position: fixed;
+    top: 11%;
+    left: 74%;
+    width: 23%;
+    border-width: 3px;
+    border-style: ridge;
+    }
+
 }
