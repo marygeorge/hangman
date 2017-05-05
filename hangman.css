@@ -76,7 +76,14 @@ h1,h3{
 {
     h1,h3{
     font-size: large;
-    
+    }
+
+    .category{
+    position: fixed;
+    top: 11%;
+    left: 3%;
+    height: 47;
+    width: 20%;
     }
 
     #hangimage{
