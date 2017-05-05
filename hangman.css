@@ -1,0 +1,96 @@
+/* Variabes   
+$orange: #ffa600;
+$green: #c1d72e;
+$blue: #82d2e5;
+$grey:#f3f3f3;
+$white: #fff;
+$base-color:$green ;*/
+body{
+    background-color: #00091a;
+    color: #99cc00;
+    font-family: 'Give You Glory', cursive;
+}
+h1,h3{
+    text-align: center;
+}
+
+.category{
+    position: fixed;
+    top: 20%;
+    left: 3%;
+    height: 47;
+    width: 20%;
+    font-weight: bold;
+    font-size: medium;
+}
+#cate{
+    font-size:large;
+}
+#hint{
+    /*position: fixed;
+    top: 36%;
+    left: 5%;
+    width: 50%;*/
+}
+
+#hinttext{
+    /*position: fixed;
+    top: 39%;
+    left: 3%;
+    width: 15%;
+    height: 15%;*/
+    word-wrap: break-word;
+}
+
+#hangimage{
+    position: fixed;
+    top: 21%;
+    left: 27%;
+    width: 47%;
+    height: 57%;
+}
+#currentWord{
+    position: fixed;
+    top: 76%;
+    left: 14%;
+    width: 45%;
+    height: 15%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.alphaButton{
+     position: fixed;
+    top: 19%;
+    left: 76%;
+    width: 23%;
+    text-align: center;
+    border-width: 3px;
+    border-style: ridge;
+
+}
+.alphabets{
+    margin: 3px;
+    width: 25px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 9px;
+    background-color: #00091a;
+    color: grey;
+}
+.alphabets:enabled{
+    background-color: #99cc00;
+    color: #00091a;
+    
+}
+
+#reset{
+   position: fixed;
+    top: 85%;
+    left: 59%;
+    width: 15%;
+    height: 7%;
+    font-size: larger;
+    font-weight: bold;
+}

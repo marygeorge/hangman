@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="hangman.css">
+    <title>Document</title>
+</head>
+<body onload="loadBody()">
+    <h1>Hangman</h1>
+<div class="category" >
+    <p id= "cate" ></p>
+    <br>
+    <button id="hint" onclick="showHint()">Hint</button>
+    <br>
+    <p id="hinttext"></p>
+</div>
+
+<img id="hangimage" alt="hangImage"  />
+
+<p id="currentWord" ></p>
+<button id="reset" onclick="loadBody()">Next</button>
+<!--<div class="guessWord" id="cword">
+    
+</div>-->
+    <div class="alphaButton">
+         <button class="alphabets" id="alpha1" onclick="clicka(this,'a')" >A</button>
+         <button class="alphabets" id="alpha2" onclick="clicka(this,'b')">B</button>
+         <button class="alphabets" id="alpha3" onclick="clicka(this,'c')">C</button>
+         <button class="alphabets" id="alpha4" onclick="clicka(this,'d')">D</button>
+         <button class="alphabets" id="alpha5" onclick="clicka(this,'e')">E</button>
+         <button class="alphabets" id="alpha6" onclick="clicka(this,'f')">F</button>
+         <button class="alphabets" id="alpha7" onclick="clicka(this,'g')">G</button>
+         <button class="alphabets" id="alpha8" onclick="clicka(this,'h')">H</button>
+         <button class="alphabets" id="alpha9" onclick="clicka(this,'i')">I</button>
+         <button class="alphabets" id="alpha10" onclick="clicka(this,'j')">J</button>
+         <button class="alphabets" id="alpha11" onclick="clicka(this,'k')">K</button>
+         <button class="alphabets" id="alpha12" onclick="clicka(this,'l')">L</button>
+         <button class="alphabets" id="alpha13" onclick="clicka(this,'m')">M</button>
+         <button class="alphabets" id="alpha14" onclick="clicka(this,'n')">N</button>
+         <button class="alphabets" id="alpha15" onclick="clicka(this,'o')">O</button>
+         <button class="alphabets" id="alpha16" onclick="clicka(this,'p')">P</button>
+         <button class="alphabets" id="alpha17" onclick="clicka(this,'q')">Q</button>
+         <button class="alphabets" id="alpha18" onclick="clicka(this,'r')">R</button>
+         <button class="alphabets" id="alpha19" onclick="clicka(this,'s')">S</button>
+         <button class="alphabets" id="alpha20" onclick="clicka(this,'t')">T</button>
+         <button class="alphabets" id="alpha21" onclick="clicka(this,'u')">U</button>
+         <button class="alphabets" id="alpha22" onclick="clicka(this,'v')">V</button>
+         <button class="alphabets" id="alpha23" onclick="clicka(this,'w')">W</button>
+         <button class="alphabets" id="alpha24" onclick="clicka(this,'x')">X</button>
+         <button class="alphabets" id="alpha25" onclick="clicka(this,'y')">Y</button>
+         <button class="alphabets" id="alpha26" onclick="clicka(this,'z')">Z</button>
+     </div>  
+      
+    
+
+
+<script src="hangman.js"></script>
+
+</body>
+</html>
