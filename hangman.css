@@ -99,11 +99,6 @@ h1,h3{
         top: 67%;
         left: 25%;
         font-size: x-large;
-        /*width: 45%;
-        height: 15%;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 3px;*/
     }
     #reset{
     position: fixed;
@@ -111,10 +106,6 @@ h1,h3{
         left: 39%;
         width: 17%;
         height: 9%;
-        
-        /*
-        font-size: larger;
-        font-weight: bold;*/
     }
    .alphaButton{
     position: fixed;
@@ -126,12 +117,9 @@ h1,h3{
     }
 
 }
+
 @media only screen and (max-device-width:310px) 
 {
-    h1,h3{
-    font-size: large;
-    
-    }
     .category{
         position: fixed;
         top: 12%;
@@ -151,11 +139,6 @@ h1,h3{
         top: 67%;
         left: 25%;
         font-size: x-large;
-        /*width: 45%;
-        height: 15%;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 3px;*/
     }
     #reset{
     position: fixed;
@@ -163,11 +146,8 @@ h1,h3{
         left: 39%;
         width: 17%;
         height: 9%;
-        
-        /*
-        font-size: larger;
-        font-weight: bold;*/
     }
+
    .alphaButton{
     position: fixed;
     top: 9%;
