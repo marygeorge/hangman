@@ -74,7 +74,7 @@ h1,h3{
 }
 
 
-@media only screen  and (max-device-height : 320px) and (max-device-width:320px) 
+@media only screen  and (max-device-height : 320px) 
 {
     h1,h3{
     font-size: large;
