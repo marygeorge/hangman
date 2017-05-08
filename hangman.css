@@ -1,5 +1,4 @@
 
-
 body{
     background-color: #00091a;
     color: #99cc00;
@@ -33,7 +32,7 @@ h1,h3{
 }
 #currentWord{
     position: fixed;
-    top: 75%;
+    top: 72%;
     left: 27%;
     width: 45%;
     height: 15%;
@@ -74,7 +73,7 @@ h1,h3{
 }
 
 
-@media only screen  and (max-device-height : 320px) 
+@media only screen  and (max-device-height : 736px)  
 {
     h1,h3{
     font-size: large;
@@ -96,7 +95,7 @@ h1,h3{
     }
     #currentWord{
         position: fixed;
-        top: 67%;
+        top: 60%;
         left: 25%;
         font-size: x-large;
         /*width: 45%;
@@ -107,20 +106,19 @@ h1,h3{
     }
     #reset{
     position: fixed;
-        top: 85%;
-        left: 39%;
+        top: 75%;
         width: 17%;
-        height: 9%;
-        
-        /*
+        /*left: 42%;
+        width: 15%;
+        height: 7%;
         font-size: larger;
         font-weight: bold;*/
     }
    .alphaButton{
     position: fixed;
-    top: 9%;
-    left: 71%;
-    width: 27%;
+    top: 11%;
+    left: 74%;
+    width: 23%;
     border-width: 3px;
     border-style: ridge;
     }
