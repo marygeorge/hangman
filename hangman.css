@@ -107,11 +107,12 @@ h1,h3{
     }
     #reset{
     position: fixed;
-        top: 75%;
+        top: 78%;
+        left: 39%;
         width: 17%;
-        /*left: 42%;
-        width: 15%;
         height: 7%;
+        
+        /*
         font-size: larger;
         font-weight: bold;*/
     }
