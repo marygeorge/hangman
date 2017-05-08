@@ -33,7 +33,7 @@ h1,h3{
 }
 #currentWord{
     position: fixed;
-    top: 72%;
+    top: 75%;
     left: 27%;
     width: 45%;
     height: 15%;
@@ -74,7 +74,7 @@ h1,h3{
 }
 
 
-@media only screen  and (max-device-height : 736px)  
+@media only screen  and (max-device-height : 320px)  
 {
     h1,h3{
     font-size: large;
@@ -96,7 +96,7 @@ h1,h3{
     }
     #currentWord{
         position: fixed;
-        top: 60%;
+        top: 67%;
         left: 25%;
         font-size: x-large;
         /*width: 45%;
