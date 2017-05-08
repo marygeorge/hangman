@@ -74,7 +74,7 @@ h1,h3{
 }
 
 
-@media only screen  and (max-device-height : 320px)
+@media only screen  and (max-device-height : 320px) and (max-device-width:320px) 
 {
     h1,h3{
     font-size: large;
@@ -99,6 +99,11 @@ h1,h3{
         top: 67%;
         left: 25%;
         font-size: x-large;
+        /*width: 45%;
+        height: 15%;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 3px;*/
     }
     #reset{
     position: fixed;
@@ -106,48 +111,11 @@ h1,h3{
         left: 39%;
         width: 17%;
         height: 9%;
+        
+        /*
+        font-size: larger;
+        font-weight: bold;*/
     }
-   .alphaButton{
-    position: fixed;
-    top: 9%;
-    left: 71%;
-    width: 27%;
-    border-width: 3px;
-    border-style: ridge;
-    }
-
-}
-
-@media only screen and (max-device-width:310px) 
-{
-    .category{
-        position: fixed;
-        top: 12%;
-        left: 3%;
-        height: 47;
-        width: 20%;
-    }
-    #hangimage{
-        position: fixed;
-        top: 10%;   
-        left: 27%;
-        width: 43%;
-        height: 53%;
-    }
-    #currentWord{
-        position: fixed;
-        top: 67%;
-        left: 25%;
-        font-size: x-large;
-    }
-    #reset{
-    position: fixed;
-        top: 85%;
-        left: 39%;
-        width: 17%;
-        height: 9%;
-    }
-
    .alphaButton{
     position: fixed;
     top: 9%;
