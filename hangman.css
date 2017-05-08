@@ -110,7 +110,7 @@ h1,h3{
         top: 85%;
         left: 39%;
         width: 17%;
-        height: 7%;
+        height: 9%;
         
         /*
         font-size: larger;
@@ -118,9 +118,9 @@ h1,h3{
     }
    .alphaButton{
     position: fixed;
-    top: 11%;
-    left: 74%;
-    width: 23%;
+    top: 9%;
+    left: 71%;
+    width: 27%;
     border-width: 3px;
     border-style: ridge;
     }
