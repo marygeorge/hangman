@@ -17,6 +17,7 @@ var displayWord="";
 var score;
 var imgSource;
 
+
 function loadBody()
 {
     score=0;
@@ -27,17 +28,14 @@ function loadBody()
     document.getElementById("cate").innerHTML="Category: <br>"+masterWordList[ranNum][1];
     document.getElementById("hinttext").innerHTML=masterWordList[ranNum][2];
     document.getElementById("hinttext").hidden=true;
-   // debugvalue.value=displayWord;
     document.getElementById("currentWord").innerHTML="";
-    //currentWord.value="";
     for(i=0;i<displayWord.length;i++)
     {
-        //currentWord.value+="-";
         document.getElementById("currentWord").innerHTML+="-";
      }
-    for(var i=1; i<=26; i++)
+    for(var i=97; i<=122; i++)
     {
-        var ele="alpha"+i;
+        var ele="alpha"+String.fromCharCode(i);
         document.getElementById(ele).disabled=false;
     }
 }
@@ -48,13 +46,23 @@ function showHint()
     
 }
 
+document.onkeypress=press;
+
+function press(event)
+{
+    if ((event.keyCode >= 65 && event.keyCode <= 90) || (event.keyCode>= 97 && event.keyCode<=122))
+    {
+        var alp="alpha"+String.fromCharCode(event.keyCode).toLowerCase();
+         document.getElementById(alp).click();
+    }
+}
 
 
 function clicka(alpha,letter)
 {
     alpha.setAttribute("disabled", "disabled");
     displayWord=displayWord.toLowerCase();
-    console.log(displayWord+ "-- clicka" + " letter="+letter);
+//    console.log(displayWord+ "-- clicka" + " letter="+letter);
     for(var x=0; x<displayWord.length; x++)
     {
         if(displayWord.substr(x,1)===letter)
@@ -62,21 +70,16 @@ function clicka(alpha,letter)
             var cw= document.getElementById("currentWord").innerHTML;
             cw = cw.substr(0, x) + letter.toUpperCase() + cw.substr(x+1 , cw.length);
              document.getElementById("currentWord").innerHTML=cw;
-
         }
     }
 
-   if(displayWord.indexOf(letter)<0)
-   {
+    if(displayWord.indexOf(letter)<0)
+    {
         score += 1;
         if(score>=13)
         {endgame(0);}
         imgSource+=1;
-        if (imgSource>14)
-        {imgSource=14;}
         hangimage.src="Hangman slides/"+imgSource+".jpg"
-        // console.log(score+" - score");
-        // console.log(imgSource+" - imgSource");
     }
     if( document.getElementById("currentWord").innerHTML.indexOf("-")<0)
     { endgame(1)}
@@ -85,19 +88,17 @@ function clicka(alpha,letter)
 
 function endgame(solved)
 {
-//alert("better luck next time!");
-for(var i=1; i<=26; i++)
-{
-    var ele="alpha"+i;
-    document.getElementById(ele).setAttribute("disabled", "disabled");
-}
-if(solved)
-{
-    //ThatWasEasy
-    hangimage.src="Hangman slides/ThatWasEasy.png"
-}
-else
-{
-   hangimage.src="Hangman slides/14.png" 
-}
+    for(var i=97; i<=122; i++)
+    {
+        var ele="alpha"+String.fromCharCode(i);
+        document.getElementById(ele).setAttribute("disabled", "disabled");
+    }
+    if(solved)
+    {
+        hangimage.src="Hangman slides/ThatWasEasy.png";
+    }
+    else
+    {
+    hangimage.src="Hangman slides/14.png" ;
+    }
 }

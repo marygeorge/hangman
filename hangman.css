@@ -1,3 +1,55 @@
+/*??????????****RESET*******????????????????????????????????????????????????????*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*??????????????????????????????????????????????????????????????????????????????????*/
+
+
 body{
     background-color: #00091a;
     color: #99cc00;
@@ -76,32 +128,42 @@ h1,h3{
 {
     h1,h3{
     font-size: large;
+    
     }
-
     .category{
-    position: fixed;
-    top: 11%;
-    left: 3%;
-    height: 47;
-    width: 20%;
+        position: fixed;
+        top: 12%;
+        left: 3%;
+        height: 47;
+        width: 20%;
     }
-
     #hangimage{
-    position: fixed;
-    top: 10%;   
-    left: 27%;
-    width: 43%;
-    height: 53%;
+        position: fixed;
+        top: 10%;   
+        left: 27%;
+        width: 43%;
+        height: 53%;
     }
     #currentWord{
         position: fixed;
         top: 60%;
         left: 25%;
-      
+        font-size: x-large;
+        /*width: 45%;
+        height: 15%;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 3px;*/
     }
     #reset{
     position: fixed;
-        top: 80%;
+        top: 75%;
+        width: 17%;
+        /*left: 42%;
+        width: 15%;
+        height: 7%;
+        font-size: larger;
+        font-weight: bold;*/
     }
    .alphaButton{
     position: fixed;
