@@ -11,6 +11,10 @@ h1,h3{
     text-align: center;
 }
 
+#solvedNumber{
+    text-align: right;
+}
+
 .category{
     position: fixed;
     top: 20%;
@@ -69,13 +73,12 @@ h1,h3{
     width: 15%;
     height: 7%;
     font-size: larger;
-    
 }
 
 
 @media only screen  and (max-device-height : 736px)  
 {
-    h1,h3{
+   body, h1,h3{
     font-size: large;
     
     }
@@ -98,27 +101,20 @@ h1,h3{
         top: 60%;
         left: 25%;
         font-size: x-large;
-        /*width: 45%;
-        height: 15%;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 3px;*/
+        
     }
     #reset{
     position: fixed;
-        top: 75%;
+        top: 78%;
         width: 17%;
-        /*left: 42%;
-        width: 15%;
-        height: 7%;
-        font-size: larger;
-        font-weight: bold;*/
+        left: 42%;
+        
     }
    .alphaButton{
     position: fixed;
     top: 11%;
-    left: 71%;
-    width: 26%;
+    left: 74%;
+    width: 23%;
     border-width: 3px;
     border-style: ridge;
     }

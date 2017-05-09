@@ -8,54 +8,48 @@
     <link rel="stylesheet" type="text/css" href="hangman.css">
     <title>Document</title>
 </head>
-<body onload="loadBody()">
+<body onload="game.loadBody()">
     <h1>Hangman</h1>
+    
 <div class="category" >
+    <p id="solvedNumber"></p>
     <p id= "cate" ></p>
-    <br>
-    <button id="hint" onclick="showHint()">Hint</button>
-    <br>
+    <button id="hint" onclick="game.showHint()">Hint</button>
     <p id="hinttext"></p>
 </div>
 
 <img id="hangimage" alt="hangImage"  />
 
 <p id="currentWord" ></p>
-<button id="reset" onclick="loadBody()">Next</button>
-<!--<div class="guessWord" id="cword">
-    
-</div>-->
-    <div class="alphaButton">
-         <button class="alphabets" id="alphaa" onclick="clicka(this,'a')" >A</button>
-         <button class="alphabets" id="alphab" onclick="clicka(this,'b')">B</button>
-         <button class="alphabets" id="alphac" onclick="clicka(this,'c')">C</button>
-         <button class="alphabets" id="alphad" onclick="clicka(this,'d')">D</button>
-         <button class="alphabets" id="alphae" onclick="clicka(this,'e')">E</button>
-         <button class="alphabets" id="alphaf" onclick="clicka(this,'f')">F</button>
-         <button class="alphabets" id="alphag" onclick="clicka(this,'g')">G</button>
-         <button class="alphabets" id="alphah" onclick="clicka(this,'h')">H</button>
-         <button class="alphabets" id="alphai" onclick="clicka(this,'i')">I</button>
-         <button class="alphabets" id="alphaj" onclick="clicka(this,'j')">J</button>
-         <button class="alphabets" id="alphak" onclick="clicka(this,'k')">K</button>
-         <button class="alphabets" id="alphal" onclick="clicka(this,'l')">L</button>
-         <button class="alphabets" id="alpham" onclick="clicka(this,'m')">M</button>
-         <button class="alphabets" id="alphan" onclick="clicka(this,'n')">N</button>
-         <button class="alphabets" id="alphao" onclick="clicka(this,'o')">O</button>
-         <button class="alphabets" id="alphap" onclick="clicka(this,'p')">P</button>
-         <button class="alphabets" id="alphaq" onclick="clicka(this,'q')">Q</button>
-         <button class="alphabets" id="alphar" onclick="clicka(this,'r')">R</button>
-         <button class="alphabets" id="alphas" onclick="clicka(this,'s')">S</button>
-         <button class="alphabets" id="alphat" onclick="clicka(this,'t')">T</button>
-         <button class="alphabets" id="alphau" onclick="clicka(this,'u')">U</button>
-         <button class="alphabets" id="alphav" onclick="clicka(this,'v')">V</button>
-         <button class="alphabets" id="alphaw" onclick="clicka(this,'w')">W</button>
-         <button class="alphabets" id="alphax" onclick="clicka(this,'x')">X</button>
-         <button class="alphabets" id="alphay" onclick="clicka(this,'y')">Y</button>
-         <button class="alphabets" id="alphaz" onclick="clicka(this,'z')">Z</button>
-     </div>  
-      
-    
-
+<button id="reset" onclick="game.loadBody()">Next</button>
+<div class="alphaButton">
+         <button class="alphabets" id="alphaa" onclick="game.clicka(this,'a')" >A</button>
+         <button class="alphabets" id="alphab" onclick="game.clicka(this,'b')">B</button>
+         <button class="alphabets" id="alphac" onclick="game.clicka(this,'c')">C</button>
+         <button class="alphabets" id="alphad" onclick="game.clicka(this,'d')">D</button>
+         <button class="alphabets" id="alphae" onclick="game.clicka(this,'e')">E</button>
+         <button class="alphabets" id="alphaf" onclick="game.clicka(this,'f')">F</button>
+         <button class="alphabets" id="alphag" onclick="game.clicka(this,'g')">G</button>
+         <button class="alphabets" id="alphah" onclick="game.clicka(this,'h')">H</button>
+         <button class="alphabets" id="alphai" onclick="game.clicka(this,'i')">I</button>
+         <button class="alphabets" id="alphaj" onclick="game.clicka(this,'j')">J</button>
+         <button class="alphabets" id="alphak" onclick="game.clicka(this,'k')">K</button>
+         <button class="alphabets" id="alphal" onclick="game.clicka(this,'l')">L</button>
+         <button class="alphabets" id="alpham" onclick="game.clicka(this,'m')">M</button>
+         <button class="alphabets" id="alphan" onclick="game.clicka(this,'n')">N</button>
+         <button class="alphabets" id="alphao" onclick="game.clicka(this,'o')">O</button>
+         <button class="alphabets" id="alphap" onclick="game.clicka(this,'p')">P</button>
+         <button class="alphabets" id="alphaq" onclick="game.clicka(this,'q')">Q</button>
+         <button class="alphabets" id="alphar" onclick="game.clicka(this,'r')">R</button>
+         <button class="alphabets" id="alphas" onclick="game.clicka(this,'s')">S</button>
+         <button class="alphabets" id="alphat" onclick="game.clicka(this,'t')">T</button>
+         <button class="alphabets" id="alphau" onclick="game.clicka(this,'u')">U</button>
+         <button class="alphabets" id="alphav" onclick="game.clicka(this,'v')">V</button>
+         <button class="alphabets" id="alphaw" onclick="game.clicka(this,'w')">W</button>
+         <button class="alphabets" id="alphax" onclick="game.clicka(this,'x')">X</button>
+         <button class="alphabets" id="alphay" onclick="game.clicka(this,'y')">Y</button>
+         <button class="alphabets" id="alphaz" onclick="game.clicka(this,'z')">Z</button>
+</div>  
 
 <script src="hangman.js"></script>
 
