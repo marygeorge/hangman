@@ -107,12 +107,12 @@ h1,h3{
         height: 10%;
     }
    .alphaButton{
-    position: fixed;
-    top: 11%;
-    left: 74%;
-    width: 23%;
-    border-width: 3px;
-    border-style: ridge;
+        position: fixed;
+        top: 11%;
+        left: 71%;
+        width: 27%;
+        border-width: 3px;
+        border-style: ridge;
     }
 
 }
