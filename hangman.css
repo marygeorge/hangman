@@ -72,7 +72,7 @@ h1,h3{
 }
 
 
-@media only screen  and (max-device-height : 736px)  
+@media only screen  and (max-device-height : 736px)  and (max-device-width : 320px)    
 {
    body, h1,h3{
     font-size: large;
@@ -100,56 +100,11 @@ h1,h3{
         
     }
     #reset{
-    position: fixed;
-        top: 78%;
-        width: 17%;
-        left: 42%;
-        
-    }
-   .alphaButton{
-    position: fixed;
-    top: 11%;
-    left: 74%;
-    width: 23%;
-    border-width: 3px;
-    border-style: ridge;
-    }
-
-}
-
-@media only screen  and (max-device-width : 320px)  
-{
-   body, h1,h3{
-    font-size: large;
-    
-    }
-    .category{
         position: fixed;
-        top: 12%;
-        left: 3%;
-        height: 47;
+        top: 78%;
         width: 20%;
-    }
-    #hangimage{
-        position: fixed;
-        top: 10%;   
-        left: 27%;
-        width: 43%;
-        height: 53%;
-    }
-    #currentWord{
-        position: fixed;
-        top: 60%;
-        left: 25%;
-        font-size: x-large;
-        
-    }
-    #reset{
-    position: fixed;
-        top: 78%;
-        width: 17%;
         left: 42%;
-        
+        height: 10%;
     }
    .alphaButton{
     position: fixed;
@@ -161,3 +116,4 @@ h1,h3{
     }
 
 }
+
