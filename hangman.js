@@ -28,18 +28,27 @@ var masterWordList=[
     ["cycle","line of course","set repeated"]
 ];
 
+var instr="<br><br>This is a basic game of Hangman.<br>";
+    instr += "Guess the letters of the hidden word to solve the puzzle.<br>"
+    instr += "Each word can take upto <u>13</u> wrong guesses.<br>"
+    instr += "If you can't solve a word it will be presented to you again at a later stage.<br>"
+    instr += "There are <u>"+masterWordList.length +"</u> wrods to solve!<br><br>"
+    instr += "Good Luck !"
+    directions.innerHTML=instr;
 var game={
     displayWord:"",
     score:0,
     imgSource:"",
     currWordIndex:0,
     wordsSolved:0,
+    totalWordCount: masterWordList.length,
 
     loadBody: function()
     {
         game.score=0;
         game.imgSource=1;
         hangimage.src="Hangman slides/"+game.imgSource+".jpg"
+        document.getElementById("hangimage").style.opacity=1;
         game.currWordIndex=Math.floor(Math.random() * (masterWordList.length)) + 0  ;
         game.displayWord=masterWordList[game.currWordIndex][0].trim();
         document.getElementById("cate").innerHTML="Category: <br>"+masterWordList[game.currWordIndex][1];
@@ -47,6 +56,7 @@ var game={
         document.getElementById("hinttext").hidden=true;
         document.getElementById("currentWord").innerHTML="";
         document.getElementById("solvedNumber").innerHTML="Words Solved: "+ game.wordsSolved;
+        document.getElementById("directions").hidden=true;
         for(i=0;i<game.displayWord.length;i++)
         {
             document.getElementById("currentWord").innerHTML+="-";
@@ -75,6 +85,7 @@ var game={
 
      clicka:function(alpha,letter)
     {
+        
         alpha.setAttribute("disabled", "disabled");
         game.displayWord=game.displayWord.toLowerCase();
     //    console.log(displayWord+ "-- clicka" + " letter="+letter);
@@ -102,22 +113,57 @@ var game={
     },
      endgame:function(solved)
     {
+        game.disableAlphas();
+        if(solved)
+        {
+            game.wordsSolved=game.wordsSolved+1;
+            console.log("game.wordsSolved="+ game.wordsSolved+"  game.totalWordCount="+ game.totalWordCount);
+            masterWordList.splice(game.currWordIndex,1);
+            hangimage.src="Hangman slides/ThatWasEasy.png";
+            document.getElementById("solvedNumber").innerHTML="Words Solved: "+ game.wordsSolved;
+            if( game.wordsSolved === game.totalWordCount)
+            {
+              game.solvedAll();
+            }
+       
+        }
+        else
+        {
+           hangimage.src="Hangman slides/14.png" ;
+           document.getElementById("hangimage").style.opacity=0.5;
+           document.getElementById("reset").focus();
+        }
+    },
+
+    disableAlphas:function()
+    {
         for(var i=97; i<=122; i++)
         {
             var ele="alpha"+String.fromCharCode(i);
             document.getElementById(ele).setAttribute("disabled", "disabled");
         }
-        if(solved)
-        {
-            game.wordsSolved=game.wordsSolved+1;
-            masterWordList.splice(game.currWordIndex,1);
-            hangimage.src="Hangman slides/ThatWasEasy.png";
-        }
-        else
-        {
-        hangimage.src="Hangman slides/14.png" ;
-        }
-    }
+    },
+
+    solvedAll:function()
+    {
+        hangimage.src="Hangman slides/AllSolved.jpg" ;
+        document.getElementById("reset").disabled=true; 
+        document.getElementById("hint").hidden=true;
+        document.getElementById("cate").innerHTML="No more words." 
+        document.getElementById("currentWord").innerHTML ="   ";  
+        document.getElementById("reset").hidden=true;
+    },
+   
 }
 
 document.onkeypress=game.press;
+
+function instclick()
+{
+    
+    var b=document.getElementById("directions").hidden
+    if(b)
+    {document.getElementById("directions").hidden=false;}
+    else
+    {document.getElementById("directions").hidden=true;}
+}

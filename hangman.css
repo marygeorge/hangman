@@ -7,6 +7,23 @@ body{
     font-family: 'Give You Glory', cursive;
     text-align: center;
 }
+#inst{
+    position: fixed;
+    top:1%;
+    left: 83%;
+    list-style: none;
+}
+#directions{
+    position: fixed;
+    top:3%;
+    left: 5%;
+    width: 90%;
+    height:90%;
+    background-color:#00091a;
+    font-size:x-large;
+    border-style: ridge;
+    text-align: center;
+}
 
 .category{
     position: fixed;
@@ -96,6 +113,7 @@ body{
         width: 45%;
         height: 45%;
     }
+    
     #currentWord{
         position: fixed;
         top: 63%;
@@ -118,6 +136,10 @@ body{
         border-width: 3px;
         border-style: ridge;
     }
+    #directions{
+        font-size:medium;
+        height:80%;
+    }
 
 }
 
@@ -127,7 +149,6 @@ body{
    body{
     font-size:medium;
     }
-
     .category{
         position: fixed;
         top: 11%;
@@ -160,6 +181,13 @@ body{
         top: 75%;
         left: 3%;
         width: 93%;
+    }
+    #directions{
+        font-size:medium;
+    }
+    #inst{
+        left:80%;
+        font-size: small;
     }
 
 }
