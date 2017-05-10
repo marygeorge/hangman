@@ -149,6 +149,7 @@ var game={
         hangimage.src="Hangman slides/AllSolved.jpg" ;
         document.getElementById("reset").disabled=true; 
         document.getElementById("hint").hidden=true;
+        document.getElementById("hinttext").innerHTML="********"
         document.getElementById("cate").innerHTML="No more words." 
         document.getElementById("currentWord").innerHTML ="   ";  
         document.getElementById("reset").hidden=true;
