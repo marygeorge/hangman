@@ -28,13 +28,15 @@ var masterWordList=[
     ["cycle","line of course","set repeated"]
 ];
 
-var instr="<br><br>This is a basic game of Hangman.<br>";
+var instr="<span text-align='right' id='closeInst' onclick='instclick()'>X Close</span>";
+    instr += "<br><br>This is a basic game of Hangman.<br>";
     instr += "Guess the letters of the hidden word to solve the puzzle.<br>"
     instr += "Each word can take upto <u>13</u> wrong guesses.<br>"
     instr += "If you can't solve a word it will be presented to you again at a later stage.<br>"
     instr += "There are <u>"+masterWordList.length +"</u> wrods to solve!<br><br>"
     instr += "Good Luck !"
     directions.innerHTML=instr;
+    
 var game={
     displayWord:"",
     score:0,
