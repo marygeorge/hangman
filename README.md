@@ -1,4 +1,4 @@
-# hangman
+# Hangman
 A game of hangman developed using javascript. 
 
 # How to play
